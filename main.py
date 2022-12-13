@@ -79,7 +79,7 @@ def main():
 
 
     if uploaded_file is not None:
-        st.text(diagnosis(uploaded_file))
+        st.text("Diagnosis is:" + diagnosis(uploaded_file))
 
 if __name__ == "__main__":
     main()
