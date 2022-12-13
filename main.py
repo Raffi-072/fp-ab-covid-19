@@ -73,7 +73,7 @@ def main():
         # Find the name of the diagnosis
         ## YOUR CODE GOES HERE##
 
-        diag = st.write(f"Predicted class: {i for i in lab if lab[i] == predictions}")
+        diag = {i for i in lab if lab[i] == predictions}
         
 
         return diag
