@@ -11,8 +11,8 @@ html_temp = """
 <h1 style="color:white;text-align:center;">X-Ray Diagnosis Covid-19 </h1>
 </div><br>"""
 st.markdown(html_temp,unsafe_allow_html=True)
-st.title('Final Project by Medical Data Sciences (MDS) - Group 10')
-st.markdown('<style>h1{color: red;}</style>', unsafe_allow_html=True)
+st.text('Final Project by Medical Data Sciences (MDS) - Group 10')
+
 
 def main():
     IMM_SIZE = 224
