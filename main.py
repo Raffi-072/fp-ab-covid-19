@@ -7,13 +7,14 @@ import pickle
 from io import BytesIO
 
 
-st.title('Diagnosis Covid-19')
-
+st.title('X-Ray Diagnosis Covid-19')
+st.text('Final Project by Medical Data Sciences (MDS) - Group 10')
 
 def main():
     IMM_SIZE = 224
     lab = {'Covid': 0, 'Viral Pneumonia': 1, 'Normal': 2}
     uploaded_file = st.file_uploader("Choose a file")
+    st.info("Please upload a file in JPEG/JPG/PNG format")
 
     def diagnosis(file):
         # Download image
