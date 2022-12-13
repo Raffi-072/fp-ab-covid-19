@@ -6,9 +6,13 @@ import matplotlib.pyplot as plt
 import pickle
 from io import BytesIO
 
-
-st.title('X-Ray Diagnosis Covid-19')
-st.text('Final Project by Medical Data Sciences (MDS) - Group 10')
+html_temp = """
+<div style="background-color:tomato;padding:1.5px">
+<h1 style="color:white;text-align:center;">X-Ray Diagnosis Covid-19 </h1>
+</div><br>"""
+st.markdown(html_temp,unsafe_allow_html=True)
+st.title('Final Project by Medical Data Sciences (MDS) - Group 10')
+st.markdown('<style>h1{color: red;}</style>', unsafe_allow_html=True)
 
 def main():
     IMM_SIZE = 224
@@ -83,14 +87,6 @@ def main():
     if uploaded_file is not None:
          st.text(diagnosis(uploaded_file))
             
-html_temp = """
-<div style="background-color:tomato;padding:1.5px">
-<h1 style="color:white;text-align:center;">Demo Web App </h1>
-</div><br>"""
-st.markdown(html_temp,unsafe_allow_html=True)
-st.title('This is for a good design')
-st.markdown('<style>h1{color: red;}</style>', unsafe_allow_html=True)
-           
-
+          
 if __name__ == "__main__":
     main()
