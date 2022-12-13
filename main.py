@@ -73,7 +73,7 @@ def main():
         # Find the name of the diagnosis
         ## YOUR CODE GOES HERE##
 
-        st.text('Your diagnosis is:') + diag = {i for i in lab if lab[i] == predictions}
+        st.text('Your diagnosis is:') diag = {i for i in lab if lab[i] == predictions}
 
         
         return diag
