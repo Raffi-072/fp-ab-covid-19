@@ -73,7 +73,8 @@ def main():
         # Find the name of the diagnosis
         ## YOUR CODE GOES HERE##
 
-        st.text('Your diagnosis is:') diag = {i for i in lab if lab[i] == predictions}
+        st.text('Your diagnosis is:') 
+        diag = {i for i in lab if lab[i] == predictions}
 
         
         return diag
@@ -81,6 +82,15 @@ def main():
 
     if uploaded_file is not None:
          st.text(diagnosis(uploaded_file))
+            
+html_temp = """
+<div style="background-color:tomato;padding:1.5px">
+<h1 style="color:white;text-align:center;">Demo Web App </h1>
+</div><br>"""
+st.markdown(html_temp,unsafe_allow_html=True)
+st.title('This is for a good design')
+st.markdown('<style>h1{color: red;}</style>', unsafe_allow_html=True)
+           
 
 if __name__ == "__main__":
     main()
