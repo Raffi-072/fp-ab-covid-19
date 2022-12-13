@@ -1,0 +1,10 @@
+numpy
+pandas
+streamlit
+pip
+scikit-learn
+sklearn
+tensorflow
+keras
+mahotas
+matplotlib
