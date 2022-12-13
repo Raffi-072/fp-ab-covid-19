@@ -74,12 +74,13 @@ def main():
         ## YOUR CODE GOES HERE##
 
         diag = {i for i in lab if lab[i] == predictions}
+        st.write(f"Predicted class: {prediction}")
 
         return diag
 
 
     if uploaded_file is not None:
-        st.text(f"Diagnosis is: " + diagnosis(uploaded_file))
+         st.text(diagnosis(uploaded_file))
 
 if __name__ == "__main__":
     main()
